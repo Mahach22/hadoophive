@@ -1,0 +1,31 @@
+<configuration>
+    <!-- Default block replication -->
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+
+    <!-- NameNode directory -->
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///opt/hadoop/dfs/name</value>
+    </property>
+
+    <!-- DataNode directory -->
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///opt/hadoop/dfs/data</value>
+    </property>
+
+    <!-- NameNode HTTP address -->
+    <property>
+        <name>dfs.namenode.http-address</name>
+        <value>0.0.0.0:9870</value>
+    </property>
+
+    <!-- NameNode RPC address -->
+    <property>
+        <name>dfs.namenode.rpc-address</name>
+        <value>0.0.0.0:8020</value>
+    </property>
+</configuration>
