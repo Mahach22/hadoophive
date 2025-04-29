@@ -7,7 +7,7 @@ USER root
 # Remove the conflicting SLF4J binding
 RUN rm /opt/tez/lib/slf4j-reload4j-1.7.36.jar
 
-#COPY core-site.xml $HADOOP_HOME/etc/hadoop/core-site.xml
+COPY core-site.xml $HADOOP_HOME/etc/hadoop/core-site.xml
 #COPY hdfs-site.xml $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 
 # Start HiveServer2
