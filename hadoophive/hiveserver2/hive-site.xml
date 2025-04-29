@@ -1,11 +1,21 @@
 <configuration>
   <property>
+    <name>hive.metastore.uris</name>
+    <value>thrift://metastore:9083</value>
+  </property>
+
+  <property>
     <name>hive.metastore.warehouse.dir</name>
     <value>/user/hive/warehouse</value>
   </property>
 
   <property>
-    <name>hive.metastore.uris</name>
-    <value>thrift://metastore:9083</value>
+    <name>fs.defaultFS</name>
+    <value>hdfs://hadoop:8020</value>
+  </property>
+
+  <property>
+    <name>hive.execution.engine</name>
+    <value>mr</value> <!-- или tez/spark -->
   </property>
 </configuration>
