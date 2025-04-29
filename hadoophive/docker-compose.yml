@@ -63,7 +63,7 @@ services:
     build: 
       context: ./hiveserver2
       args:
-        HIVE_VERSION: 4.0.0
+        HIVE_VERSION: 4.0.1
     depends_on:
       - metastore
     restart: unless-stopped
